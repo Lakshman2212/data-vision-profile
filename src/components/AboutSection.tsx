@@ -1,4 +1,6 @@
 
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+
 const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
@@ -26,11 +28,16 @@ const AboutSection = () => {
           </div>
           
           <div className="flex justify-center">
-            <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center shadow-2xl">
-              <div className="w-72 h-72 bg-white rounded-full flex items-center justify-center">
-                <span className="text-6xl font-bold text-gray-800">LK</span>
-              </div>
-            </div>
+            <Avatar className="w-80 h-80 shadow-2xl">
+              <AvatarImage 
+                src="/lovable-uploads/2b329b93-480a-447a-ae41-180c0fef2bcf.png" 
+                alt="G. Venkata Lakshman Kumar"
+                className="object-cover"
+              />
+              <AvatarFallback className="text-6xl font-bold text-gray-800 bg-gradient-to-br from-blue-400 to-purple-500">
+                LK
+              </AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
