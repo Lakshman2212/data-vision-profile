@@ -36,9 +36,23 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           <button 
             onClick={() => scrollToSection("hero")}
-            className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors"
+            className="flex items-center gap-3 hover:scale-105 transition-transform duration-200"
           >
-            LK
+            <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
+              <svg 
+                width="24" 
+                height="24" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                className="text-white"
+              >
+                <circle cx="12" cy="8" r="3" fill="currentColor"/>
+                <path d="M12 14c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" fill="currentColor"/>
+              </svg>
+            </div>
+            <span className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+              LK
+            </span>
           </button>
           
           <div className="hidden md:flex space-x-8">
