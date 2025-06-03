@@ -36,7 +36,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center">
           <button 
             onClick={() => scrollToSection("hero")}
-            className="flex items-center gap-3 hover:scale-105 transition-transform duration-200"
+            className="hover:scale-105 transition-transform duration-200"
           >
             <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
               <svg 
@@ -50,9 +50,6 @@ const Navigation = () => {
                 <path d="M12 14c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4z" fill="currentColor"/>
               </svg>
             </div>
-            <span className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
-              LK
-            </span>
           </button>
           
           <div className="hidden md:flex space-x-8">
